@@ -1,4 +1,7 @@
-import mongoose from 'mongoose';
+
+const mongoose = require('mongoose');
+
+
 
 const connect = () => {
 
@@ -26,4 +29,4 @@ mongoose.connection.on('disconnected',()=>{
     connect();
 });
 
-export default connect;
+module.exports = connect;
