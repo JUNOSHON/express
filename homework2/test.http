@@ -1,0 +1,72 @@
+###
+POST http://localhost:8000/api/users
+Accept: application/json
+Content-Type: application/json
+
+{
+  "username": "jaeyoung",
+  "address": "Sejong-si Dodam-dong",
+  "phonenumber": "010-5435-8151",
+  "email": "jaeyoung@wisoft.io"
+}
+###
+PATCH http://localhost:8000/api/users/640861c8c574497cda8e2333
+Accept: application/json
+Content-Type: application/json
+
+{
+"email": "JaeOne@wisoft.io",
+"password": "nodejs",
+"nickName": "JackOne"
+}
+###
+POST http://localhost:8000
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email": "JaeOne@wisoft.io",
+  "password": "nodejs",
+  "userName": "JaeOne"
+}
+
+###
+POST http://localhost:8000
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email": "JaeOne@wisoft.io",
+  "password": "nodejs",
+  "userName": "JaeOne",
+  "nickName": "JackJack"
+}
+
+###
+DELETE  http://localhost:8000/api/users/640871d1b723290eff40e032
+Accept: application/json
+
+
+
+###
+DELETE  http://localhost:8000
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email": "Jaeyoung@wisoft.io",
+  "password": "nodejs"
+}
+
+###
+
+
+###
+GET http://localhost:8000/api/users/640abff11a1a2358a99d873f
+Accept: application/json
+Content-Type: application/json
+###
+GET http://localhost:8000/api/users/juno
+Accept: application/json
+Content-Type: application/json
+
